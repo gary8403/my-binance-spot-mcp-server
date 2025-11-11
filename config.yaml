@@ -1,0 +1,41 @@
+# MCP Tools Configuration
+# This file controls which Binance SDK interfaces are exposed as MCP tools
+
+tools:
+  # Market Data Tools
+  market:
+    enabled: true
+    tools:
+      - get_symbol_ticker      # Get symbol price ticker
+      - get_orderbook          # Get order book depth
+      - get_klines             # Get candlestick/kline data
+      - get_trades             # Get recent trades
+      - get_24hr_ticker        # Get 24hr price change statistics
+      - get_avg_price          # Get average price
+      - get_exchange_info      # Get exchange information
+
+  # Trading Tools
+  trading:
+    enabled: true
+    tools:
+      - create_order           # Create a new order
+      - test_order             # Test order creation (no actual order placed)
+      - cancel_order           # Cancel an active order
+      - get_order              # Check an order's status
+
+  # Account Tools
+  account:
+    enabled: true
+    tools:
+      - get_account_info       # Get account information
+      - get_balance            # Get account balance
+      - get_account_status     # Get account API trading status
+
+  # Order Management Tools
+  order:
+    enabled: true
+    tools:
+      - get_open_orders        # Get all open orders
+      - get_all_orders         # Get all orders (active, canceled, filled)
+      - cancel_all_orders      # Cancel all open orders on a symbol
+      - cancel_open_orders     # Cancel all open orders
