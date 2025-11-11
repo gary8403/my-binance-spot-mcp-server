@@ -269,8 +269,6 @@ my-binance-spot-mcp-server/
 ├── README.md                  # This file
 ├── LICENSE                    # License file
 ├── binance_mcp_server.log     # Server logs (generated)
-├── docs/
-│   └── DESIGN.md             # Design documentation (Chinese)
 └── src/                       # Source code
     ├── __init__.py
     ├── binance_wrapper/       # Binance SDK wrapper layer
